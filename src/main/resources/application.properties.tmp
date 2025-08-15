@@ -1,0 +1,36 @@
+
+qdrant.url=
+qdrant.api.key=
+qdrant.collection.name=
+qdrant.vector.size=1536
+
+
+openai.api.key=
+openai.embedding.model=
+
+
+knowledge.base.directory=D:/knowledge
+knowledge.base.extensions=txt,md
+#knowledge.base.directory=/data/spider
+
+
+
+update.cron=0 0 2 14,28 * ?
+
+
+logging.level.root=INFO
+logging.level.com.knowledgebase=DEBUG
+logging.level.com.knowledgebase.qdrant.service.QdrantService=DEBUG
+logging.level.com.knowledgebase.qdrant.service.EmbeddingService=DEBUG
+
+
+logging.pattern.console=%d{yyyy-MM-dd HH:mm:ss} [%thread] %highlight(%-5level) %cyan(%logger{36}) - %msg%n
+
+upload.batch_size=100
+upload.chunk_size=1000
+
+
+update.schedule=0 0 2 14,28 * ?
+
+
+sync.state.file=./sync_state.json
